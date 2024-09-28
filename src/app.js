@@ -7,8 +7,12 @@ app.use("/", (req, res) => {
 });
 
 app.use("/hello", (req, res) => {
-    res.send("Hello from another route!!!")
-})
+    res.send("Hello from another route!!!");
+});
+
+app.use("/test", (req, res) => {
+    res.send("Hello from test route!!!");
+});
 
 app.listen(3000, () => {
     console.log('Server is successfully listening on port 3000...')
